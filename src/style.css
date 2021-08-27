@@ -1,0 +1,46 @@
+img {
+    height: 50%;
+    width: 50%;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+h1, h1 {
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+    background-color: #67595E;
+    height: 50px;
+}
+
+h2 {
+    font-size: 18px;
+    background-color: #EED6D3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A49393;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover, .active {
+  background-color:#EED6D3;
+  color: grey;
+}
