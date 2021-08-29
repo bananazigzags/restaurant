@@ -29,7 +29,7 @@ const menuLoad = () => {
                 { name: "Very Berry Smoothie", price: "$5.00" },
                 { name: "Green Smoothie", price: "$4.50" },
                 { name: "Berry-Infused Sparkling Water", price: "$1.00" },
-                { name: "Freshly Squeezed Juice Orange/Apple/Carrot/Grapefruit", price: "$4.50" },
+                { name: "Freshly Squeezed Juice Orange/ Apple/ Carrot/ Grapefruit", price: "$4.50" },
                 { name: "House Wine Red/White/Rose", price: "$7.00" }
             ]
         ]
@@ -45,6 +45,7 @@ const menuLoad = () => {
             section[1].forEach((item) => {
                 const row = document.createElement('tr');
                 const name = document.createElement('td');
+                name.classList.add("dish");
                 name.textContent = item.name;
                 const price = document.createElement('td');
                 price.classList.add("price");

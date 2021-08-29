@@ -31,9 +31,9 @@ p {
 
 iframe {
   border: 0;
-  width: 600;
-  height: 450;
   margin-left: 15px;
+  width: 90%;
+  height: auto;
 }
 
 h1 {
@@ -48,6 +48,7 @@ h1 {
 }
 
 h2 {
+    width: 95%;
     height: 30px;
     font-size: 18px;
     background-color: #EED6D3;
@@ -80,20 +81,24 @@ li:hover, .active {
 }
 
 table {
-  width: 80%;
+  width: 100%;
   margin-left: 5px;
+  padding-right: 10px;
 }
 
 td {
   font-size: 18px;
+}
+
+.dish {
   width: 90%;
 }
 
 .price {
   display: flex;
   align-items: baseline;
-  padding-left: 30px;
   justify-content: end;
+  padding-left: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,5 +109,18 @@ td {
 
   table {
     width: 60%; 
+  }
+
+  h2 {
+    width: 60%;
+  }
+
+  .contact-heading {
+    width: 30%;
+  }
+
+  iframe {
+    width: 600;
+    height: 450;
   }
 }

@@ -4,6 +4,7 @@ const contactLoad = () => {
     function location() {
         const div = document.createElement('div');
         const location = document.createElement('h2');
+        location.classList.add("contact-heading");
         location.textContent = "LOCATION";
         const address = document.createElement('p');
         address.textContent = "Address: 1 Airport Rd., King George Island"
@@ -25,6 +26,7 @@ const contactLoad = () => {
     function contacts() {
         const div = document.createElement('div');
         const reservations = document.createElement('h2');
+        reservations.classList.add("contact-heading");
         reservations.textContent = "RESERVATIONS";
         const phone = document.createElement('p');
         phone.textContent = "Phone: 555-123-4567";
