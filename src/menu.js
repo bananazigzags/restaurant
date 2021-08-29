@@ -47,6 +47,7 @@ const menuLoad = () => {
                 const name = document.createElement('td');
                 name.textContent = item.name;
                 const price = document.createElement('td');
+                price.classList.add("price");
                 price.textContent = item.price;
                 row.appendChild(name);
                 row.appendChild(price);

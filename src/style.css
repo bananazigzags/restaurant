@@ -9,13 +9,6 @@ p {
     font-size: 18px;
 }
 
-@media only screen and (min-width: 768px) {
-  #front-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 #magazine {
   padding-left: 20px;
   font-size: 16px;
@@ -87,12 +80,29 @@ li:hover, .active {
 }
 
 table {
-  width: 60%;
+  width: 80%;
   margin-left: 5px;
 }
 
 td {
   font-size: 18px;
-  width: 80%;
-  padding-right: 30px;
+  width: 90%;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  padding-left: 30px;
+  justify-content: end;
+}
+
+@media only screen and (min-width: 768px) {
+  #front-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  table {
+    width: 60%; 
+  }
 }
