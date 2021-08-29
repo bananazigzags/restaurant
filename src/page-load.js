@@ -41,9 +41,41 @@ const aboutLoad = () => {
     const page = document.getElementById("page");
 
     function about() {
+        const about = document.createElement('div');
+        about.id = "front-page";
         const image = document.createElement('img');
         image.src = require("./main.jpg");
-        return image
+        const textBlock = document.createElement('div');
+        textBlock.id = "text-block";
+
+        const message = document.createElement('p');
+        message.classList.add("front");
+        message.textContent = "{eat} invites you to try the best vegetarian dishes the world has to offer.";
+
+        const review = document.createElement('p');
+        review.classList.add("front");
+        review.textContent = '"The most delightful restaurant in Antarctica."';
+        const reviewLine2 = document.createElement('p');
+        reviewLine2.id = "magazine";
+        reviewLine2.textContent = "- Food and Beverage Magazine";
+
+        const review2 = document.createElement('p');
+        review2.classList.add("front");
+        review2.textContent = '"Burst of flavor among the ice."';
+        const reviewLine3 = document.createElement('p');
+        reviewLine3.id = "magazine";
+        reviewLine3.textContent = "- Hospitality Magazine";
+
+        textBlock.appendChild(message);
+        textBlock.appendChild(review);
+        textBlock.appendChild(reviewLine2);
+        textBlock.appendChild(review2);
+        textBlock.appendChild(reviewLine3);
+       
+        about.appendChild(image);
+        about.appendChild(textBlock);        
+
+        return about
     }
 
     page.appendChild(about());

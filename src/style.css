@@ -1,21 +1,57 @@
 img {
-    height: 50%;
-    width: 50%;
+    width: 100%;
+    height: auto;
     margin-top: 20px;
 }
 
 p {
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-h1, h1 {
+@media only screen and (min-width: 768px) {
+  #front-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#magazine {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.front {
+  font-size: 20px;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: -10px;
+}
+
+#text-block {
+  height: auto;
+  width: auto;
+  background-color: #EED6D3;
+  margin: 20px 10px 0px 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+iframe {
+  border: 0;
+  width: 600;
+  height: 450;
+  margin-left: 15px;
+}
+
+h1 {
     margin: 0;
     padding-left: 15px;
-    padding-top: 10px;
     color: white;
-    background-color: #67595E;
-    height: 50px;
+    background-color: #978f92;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
 }
 
 h2 {
@@ -42,7 +78,7 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 li:hover, .active {
@@ -56,6 +92,7 @@ table {
 }
 
 td {
+  font-size: 18px;
   width: 80%;
   padding-right: 30px;
 }
