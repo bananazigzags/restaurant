@@ -14,14 +14,14 @@ const navLoad = () => {
         const nav = document.createElement('ul');
         nav.id = "navbar";
         const about = document.createElement('li');
-        about.textContent = "About";
+        about.textContent = "about";
         about.id = "about";
         about.classList.add("active");
         const menu = document.createElement('li');
-        menu.textContent = "Menu";
+        menu.textContent = "menu";
         menu.id = "menu";
         const contacts = document.createElement('li');
-        contacts.textContent = "Contacts";
+        contacts.textContent = "contacts";
         contacts.id = "contacts";
         
         nav.appendChild(about);

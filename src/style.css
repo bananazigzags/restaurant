@@ -19,8 +19,12 @@ h1, h1 {
 }
 
 h2 {
+    height: 30px;
     font-size: 18px;
     background-color: #EED6D3;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
 ul {
@@ -38,9 +42,20 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 16px;
 }
 
 li:hover, .active {
   background-color:#EED6D3;
   color: grey;
+}
+
+table {
+  width: 60%;
+  margin-left: 5px;
+}
+
+td {
+  width: 80%;
+  padding-right: 30px;
 }
